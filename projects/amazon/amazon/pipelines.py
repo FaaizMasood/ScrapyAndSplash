@@ -10,4 +10,5 @@ from itemadapter import ItemAdapter
 
 class AmazonPipeline:
     def process_item(self, item, spider):
+        print("pipeline:------------------ ", item['title'][0])
         return item
